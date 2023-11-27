@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            background: url('1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            backdrop-filter: blur(8px);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Create a navigation bar with solid buttons */
+        nav {
+            background-color: #333; /* Background color for the navbar */
+            overflow: hidden;
+            position: fixed; /* Fixed position to stay at the top */
+            width: 100%; /* Occupy the full width */
+            top: 0; /* Position at the top */
+            z-index: 1; /* Ensure it appears above other content */
+        }
+
+        /* Style for the buttons */
+        nav button {
+            background-color: #555; /* Button background color */
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add a smooth transition */
+        }
+
+        /* Hover effect for buttons */
+        nav button:hover {
+            background-color: #777; /* Darker color on hover */
+        }
+
+        /* Add some space between buttons */
+        nav button:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        /* Align the "Sign In" button to the right */
+        nav button:last-child {
+            margin-left: auto;
+        }
+
+        .registration-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 80px; /* Adjust the margin to create space between navbar and registration container */
+            width: 300px;
+        }
+
+        .registration-container h2 {
+            color: #333;
+        }
+
+        .input-group {
+            margin: 20px 0;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .input-group button {
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .input-group button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar with buttons -->
+    <nav>
+        <button><a href="FrontPage.html" style="text-decoration: none; color: white;">Home</a></button>
+        <button><a href="Story.html" style="text-decoration: none; color: white;">Story</a></button>
+        <button>Challenge</button>
+        <button>About Us</button>
+    </nav>
+
+    <div class="registration-container">
+        <h2>Register</h2>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+        </div>
+        <div class="input-group">
+            <button type="submit">Register</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Webpage</title>
+    <style>
+        /* Reset some default browser styles */
+        body, ul, nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url('1.jpg') no-repeat center center fixed; /* Set your background image */
+            background-size: cover; /* Cover the entire background */
+            overflow: hidden;
+            position: relative; /* Position relative for stacking */
+            backdrop-filter: blur(8px); /* Add a blur effect to the background */
+            font-family: 'Arial', sans-serif; /* Choose an appropriate font */
+        }
+
+        /* Create a navigation bar with solid buttons */
+        nav {
+            background-color: #333; /* Background color for the navbar */
+            overflow: hidden;
+            position: relative; /* Position relative for stacking */
+        }
+
+        /* Style for the buttons */
+        nav button {
+            background-color: #555; /* Button background color */
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Add a smooth transition */
+        }
+
+        /* Hover effect for buttons */
+        nav button:hover {
+            background-color: #777; /* Darker color on hover */
+        }
+
+        /* Add some space between buttons */
+        nav button:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        /* Align the "Sign In" button to the right */
+        nav button:last-child {
+            margin-left: auto;
+        }
+
+        /* Content styling */
+        .content {
+            text-align: center;
+            color: rgb(0, 0, 0); /* Text color for the content */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar with buttons -->
+    <nav>
+        <button>Home</button>
+        <button><a href="Story.html" style="text-decoration: none; color: white;">Story</a></button>
+        <button>Challenge</button>
+        <button>About Us</button>
+        <button><a href="SignIn.html" style="text-decoration: none; color: white;">Sign In</a></button>
+    </nav>
+
+    <!-- Content of your webpage goes here -->
+    <div class="content">
+        <h1>Pembentukan Malaysia</h1>
+        <p>Marilah Kita Memperingati Dedikasi dan Pengorbanan Para Syuhada</p>
+    </div>
+</body>
+</html>
