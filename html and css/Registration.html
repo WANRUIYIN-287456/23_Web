@@ -120,7 +120,6 @@
             color: #777;
         }
 
-        /* Notification styles */
         .notification {
             display: none;
             background-color: rgba(0, 128, 0, 0.2);
@@ -128,10 +127,35 @@
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 10px;
+            width: 300px;
+            text-align: center;
+            position: fixed;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .notification.show {
             display: block;
+        }
+
+        .notification button {
+            margin-top: 10px;
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .notification button:hover {
+            background-color: #777;
         }
     </style>
 </head>

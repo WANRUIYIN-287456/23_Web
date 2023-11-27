@@ -155,5 +155,28 @@
             <a href="delete_user.html" class="delete-account">Delete Account</a>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#signupForm').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'login_user.php',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        if (response.status === 'success') {
+                            // Redirect to story.html upon successful login
+                            window.location.href = 'Story.html';
+                        } else {
+                            // Show an alert or handle unsuccessful login
+                            alert('Login failed. Please check your credentials.');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
