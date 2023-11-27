@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Include the database connection
+include 'dbconnect.php'; // Include the database connection
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
